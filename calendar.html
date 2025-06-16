@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calendar</title>
+  <link rel="stylesheet" href="calendar.css" />
+</head>
+<body>
+  <button id="goBack" onclick="window.location.href='index.html'">← Back to Dashboard</button>
+
+  <div class="calendar-container">
+    <div class="calendar-header">
+      <button id="prevMonth">◀</button>
+      <h1 id="monthYear">Loading...</h1>
+      <button id="nextMonth">▶</button>
+    </div>
+    <div class="calendar-grid" id="calendarGrid"></div>
+  </div>
+<!-- Modal for adding/editing events -->
+<div id="eventModal" class="modal hidden">
+    <div class="modal-content">
+      <h2 id="modalDateTitle">Add Event</h2>
+      <input type="text" id="eventTitle" placeholder="Event title" />
+      <input type="time" id="eventTime" />
+      <button id="saveEvent">Save</button>
+      <button id="cancelEvent">Cancel</button>
+    </div>
+  </div>
+  
+  <!-- Events List -->
+  <div class="events-section">
+    <h2>Scheduled Events</h2>
+    <ul id="eventList"></ul>
+  </div>
+  <script src="calendar.js"></script>
+</body>
+</html>

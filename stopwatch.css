@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #5b2acf; /* Matching the purple dashboard color */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 30px;
+    font-size: 36px;
+  }
+  
+  .circle {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto 30px auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 8px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #stopwatch {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  .controls button {
+    margin: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  #startButton { background-color: #4CAF50; color: white; }
+  #stopButton { background-color: #f44336; color: white; }
+  #pauseButton { background-color: #ff9800; color: white; }
+  #resumeButton { background-color: #2196F3; color: white; }
+  #resetButton { background-color: #9c27b0; color: white; }
+  
+  .controls button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  #goBack {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    background-color: #ffffff;
+    color: #6cb513;
+    border: 1px solid #6cb513;
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }

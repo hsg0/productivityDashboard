@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+  <div id="sidebar">
+    <h1>Welcome to the Dashboard</h1>
+    <p>This is a simple dashboard layout.</p>
+
+    <button id="toggleButton">Toggle Color Theme</button>
+
+    <div id="weatherSection">
+      <input type="text" id="enterCity" placeholder="Enter City Name">
+      <button id="getWeather">Get Weather</button>
+      <div id="weatherDisplay">
+        <img src="" alt="Weather Icon" id="weatherIcon" style="display: none;">
+        <p id="weatherText">Weather information will be displayed here.</p>
+      </div>
+    </div>
+
+    <!-- ⬇️ Moved this INSIDE the sidebar -->
+    <div id="clock">
+      <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+    </div>
+  </div> <!-- ✅ Now this closes after clock -->
+
+  <div id="mainContent">
+    <a href="todo.html" class="contentLink">
+      <div id="content1" class="contentBox">
+        <h2>To Do List</h2>
+        <p>Keep track of the things you need to complete.</p>
+        <div class="dynamicContent">
+          <p>Dynamic content will be loaded here.</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="calendar.html" class="contentLink">
+      <div id="content2" class="contentBox">
+        <h2>Daily Calendar</h2>
+        <p>Schedule your time.</p>
+        <div class="dynamicContent">
+          <p>Dynamic content will be loaded here.</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="quote.html" class="contentLink">
+      <div id="content3" class="contentBox">
+        <h2>Motivational Quote</h2>
+        <p>Motivation is needed from time to time.</p>
+        <div class="dynamicContent">
+          <p>Dynamic content will be loaded here.</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="stopwatch.html" class="contentLink">
+      <div id="content4" class="contentBox">
+        <h2>Stop Watch</h2>
+        <p>Track your breaks.</p>
+        <div class="dynamicContent">
+          <p>Dynamic content will be loaded here.</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="goals.html" class="contentLink">
+      <div id="content5" class="contentBox">
+        <h2>Write out your Goals</h2>
+        <p>Write down your Goals and be reminded of them.</p>
+        <div class="dynamicContent">
+          <p>Dynamic content will be loaded here.</p>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

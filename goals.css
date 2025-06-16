@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    background-color: #f0c0a0; /* Dashboard peach theme */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  #goBack {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    background-color: #ffffff;
+    color: #d67a3c;
+    border: 1px solid #d67a3c;
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .goal-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .goal-container h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .goal-container p {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  textarea#goalDescription {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  textarea#goalDescription {
+    min-height: 120px;
+    resize: vertical;
+    line-height: 1.5;
+  }
+  
+  button[type="submit"] {
+    background-color: #d67a3c;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #c36b32;
+  }
+  
+  .goal-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .goal-actions button {
+    flex: 1 1 auto;
+    min-width: 120px;
+    background-color: #d67a3c;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .goal-actions button:hover {
+    background-color: #c36b32;
+  }
+  
+  #goalList h2 {
+    margin-bottom: 10px;
+  }
+  
+  #goals {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #goals li {
+    background-color: #ffe4d1;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-left: 4px solid #d67a3c;
+    border-radius: 6px;
+  }

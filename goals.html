@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Write Your Goals</title>
+  <link rel="stylesheet" href="goals.css" />
+</head>
+<body>
+    <button id="goBack" onclick="window.location.href='index.html'">← Back to Dashboard</button>
+  
+    <div class="goal-container">
+      <h1>Write your Goals</h1>
+      <p>Here you can write your goals and track your progress.</p>
+  
+      <form id="goalForm">
+        <input type="text" id="goalInput" placeholder="Title of Goal" required />
+        <textarea id="goalDescription" placeholder="Describe your goal here..." rows="5" required></textarea>
+        <button type="submit">Add Goal</button>
+      </form>
+  
+      <div class="goal-actions">
+        <button id="saveGoals">Save Goals</button>
+        <button id="loadGoals">Load Goals</button>
+        <button id="clearGoals">Clear Goals</button>
+        <button id="deleteGoals">Delete All Goals</button>
+        <!-- <button id="editGoals">Edit All Goals</button> -->
+      </div>
+  
+      <div id="goalList">
+        <h2>Your Goals</h2>
+        <ul id="goals"></ul>
+      </div>
+    </div>
+  
+    <script src="goals.js"></script>
+  </body>
+</html>
